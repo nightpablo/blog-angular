@@ -1,5 +1,5 @@
 export var global = {
-	url: 'http://api-laravel-api-laravel.apps.us-east-2.online-starter.openshift.com/public/api/',
+	url: 'http://laravel-app-testb.herokuapp.com/public/api/',
 	htmlEntities: function(str) {
       return String(str).replace('&ntilde;', 'ñ')
                         .replace('&Ntilde;', 'Ñ')
