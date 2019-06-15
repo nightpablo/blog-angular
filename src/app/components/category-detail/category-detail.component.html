@@ -1,0 +1,19 @@
+<div class="loading" *ngIf="!category">
+	Cargando...
+</div>
+
+<div class="container-fluid mt-3" *ngIf="category">
+	<h1>{{category.name}}</h1>
+	<hr>
+	<div class="loading" *ngIf="!posts">
+		Cargando...
+	</div>
+	<div class="alert alert-warning" *ngIf="posts && posts.length == 0">
+		No hay entrada que mostrar en esta categoría.
+	</div>
+	<!-- Listado de entradas-->
+	<post-list [posts]="posts"
+				[identify]="identify"
+				[url]="url"></post-list>
+	<hr>
+</div>

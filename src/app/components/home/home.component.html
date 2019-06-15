@@ -1,0 +1,12 @@
+<div class="loading" *ngIf="!posts">
+	Cargando...
+</div>
+<div class="container-fluid mt-3" *ngIf="posts">
+	<h1>{{page_title}}</h1>
+	<!-- Listado de entradas-->
+	<post-list [posts]="posts"
+				[identify]="identify"
+				[url]="url"
+				(eliminameElPost)="deletePost($event)"></post-list>
+	<hr>
+</div>
