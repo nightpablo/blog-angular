@@ -1,5 +1,5 @@
 export var global = {
-	url: 'http://laravel-app-testb.herokuapp.com/public/api/',
+    url: 'http://66.97.33.132:3999/api/',
 	htmlEntities: function(str) {
       return String(str).replace('&ntilde;', 'ñ')
                         .replace('&Ntilde;', 'Ñ')
