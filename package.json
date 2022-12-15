@@ -29,7 +29,7 @@
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26",
     "ejs": "^2.3.1",
-    "express": "~4.9.x"
+    "express": "~4.17.x"
   },
   "engines": {
     "node": "0.12.2"
